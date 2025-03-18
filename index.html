@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>etch-a-sketch</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Etch-a-Sketch</h1>
+    <div class="controls">
+      <h2>Choose a grid size</h2>
+
+      <input
+        class="changeSize"
+        type="range"
+        min="1"
+        max="100"
+        value="16"
+        oninput="this.nextElementSibling.value = this.value; this.title = this.value"
+      />
+      <output>16</output>
+    </div>
+
+    <button class="reset">Reset</button>
+    <button class="random">random</button>
+    <button class="black">Black</button>
+    <button class="eraser">Eraser</button>
+    <div class="container"></div>
+  </body>
+  <script src="./app.js"></script>
+</html>
