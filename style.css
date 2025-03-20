@@ -170,19 +170,22 @@ button:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-footer {
+.made {
+  padding: 1rem ;
   text-align: center;
-  padding: 1rem;
+}
+.made a > i {
+  font-size: larger;
 }
 
-footer a {
+.made a {
   color: #6366f1;
   text-decoration: none;
   font-weight: bold;
   padding: 0.3rem;
 }
 
-footer a:hover {
+.made a:hover {
   color: #4f51e5;
   text-decoration: underline;
 }
